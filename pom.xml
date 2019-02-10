@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <modules>
+        <module>WrBoot-Schedule</module>
+        <module>WrBoot-Generate</module>
+        <module>WrBoot-Orm</module>
+        <module>WrBoot-Paraent</module>
+        <module>WrBoot-Security</module>
+        <module>WrBoot-Utils</module>
+        <module>WrBoot-WebSplider</module>
+        <module>WrBoot-Import</module>
+        <module>WrBoot-Export</module>
+        <module>WrBoot-Roles</module>
+        <module>WrBoot-Charts</module>
+    </modules>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.8.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.github.woerry</groupId>
+    <artifactId>wrboot</artifactId>
+    <version>1.0.0</version>
+    <name>WrBoot</name>
+    <description>Woerry&#39;s j2ee framework based Spring Boot2 and JDK8</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    <dependencyManagement>
+    <!-- 模块说明：这里声明多个子模块 -->
+    <dependencies>
+    <!--子版本依赖-->
+        <dependency>
+            <groupId>com.github.woerry</groupId>
+            <artifactId>WrBoot-Charts</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.woerry</groupId>
+            <artifactId>WrBoot-Export</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.woerry</groupId>
+            <artifactId>WrBoot-Generate</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.woerry</groupId>
+            <artifactId>WrBoot-Import</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.woerry</groupId>
+            <artifactId>WrBoot-Orm</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.woerry</groupId>
+            <artifactId>WrBoot-Paraent</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.woerry</groupId>
+            <artifactId>WrBoot-Roles</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.woerry</groupId>
+            <artifactId>WrBoot-Schedule</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.woerry</groupId>
+            <artifactId>WrBoot-Security</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.woerry</groupId>
+            <artifactId>WrBoot-Utils</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.woerry</groupId>
+            <artifactId>WrBoot-WebSplider</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+    </dependencyManagement>
+
+
+
+
+
+</project>
